@@ -63,7 +63,7 @@
             }
         </style>
     </head>
-    <body> 
+    <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -81,19 +81,24 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Progetto VUE LARAVEL
                 </div>
-
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <img src="https://avatars3.githubusercontent.com/u/59876947?s=460&u=7dd0ad0a95427d1f07b31a7ba3e0c2ee4a757cfa&v=4" alt="">
+                    </div>
+                  </div>
+                </div>
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://github.com/Mirko2552150"><h1>Longo Mirko</h1></a>
                 </div>
+                <style>
+                  .links h1:hover {
+                    color: red;
+                    transform: scale(1.1);
+                  }
+                </style>
             </div>
         </div>
     </body>
