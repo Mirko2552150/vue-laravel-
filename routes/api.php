@@ -13,4 +13,9 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+// chiamata http://localhost:8000/api/message
+Route::get('message', function(){
+  return response()->json([
+    'message' => 'ciao Mirko'
+  ]); // ritorna un JSON
+});

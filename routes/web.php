@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// any, qualsiasi cosa prendo, ritorna a VUE
 Route::get('{any?}', function () {
     return view('vue');
 })->where('any', '.*');
