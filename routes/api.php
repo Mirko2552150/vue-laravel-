@@ -16,6 +16,20 @@ use Illuminate\Support\Facades\Route;
 // chiamata http://localhost:8000/api/message
 Route::get('message', function(){
   return response()->json([
-    'message' => 'ciao Mirko'
+    ['title' => 'A',
+    'autore' => 'A',
+    'img' => './img/apilogo.jpg'],
+    ['title' => 'B',
+    'autore' => 'B',
+    'img' => './img/apilogo.jpg'],
+    ['title' => 'C',
+    'autore' => 'C',
+    'img' => './img/apilogo.jpg'],
+    ['title' => 'D',
+    'autore' => 'D',
+    'img' => './img/apilogo.jpg'],
+    ['title' => 'E',
+    'autore' => 'E',
+    'img' => './img/apilogo.jpg']
   ]); // ritorna un JSON
 });

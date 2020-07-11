@@ -27,6 +27,7 @@
         // console.log(messageFromController);
         self.message = messageFromController; // do a messagge il valore del RESPONSE
 
+
       }); // primo paramentro, cosa devo chiamate, secondo parametro funzione di CALLBACK
     }
   };

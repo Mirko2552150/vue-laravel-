@@ -1,6 +1,7 @@
 <template>
   <div class="lavori-card">
     {{ this.data.title }} - {{ this.data.autore }}
+    <img :src="data.img" alt="">
   </div>
 </template>
 
@@ -23,5 +24,8 @@ export default {
     height: 200px;
     margin: 10px;
     flex-wrap: wrap;
+    img {
+      width: 100%;
+    }
   }
 </style>

@@ -1914,6 +1914,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['data'],
   // se mi arrivano da un altro componente NON sono DATA ma PROPS
@@ -1945,6 +1946,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -1956,21 +1958,41 @@ __webpack_require__.r(__webpack_exports__);
     return {
       works: [{
         title: 'A',
-        autore: 'A'
+        autore: 'A',
+        img: './img/apilogo.jpg'
       }, {
         title: 'B',
-        autore: 'B'
+        autore: 'B',
+        img: './img/apilogo.jpg'
       }, {
         title: 'C',
-        autore: 'C'
+        autore: 'C',
+        img: './img/apilogo.jpg'
       }, {
         title: 'D',
-        autore: 'D'
+        autore: 'D',
+        img: './img/apilogo.jpg'
       }, {
         title: 'E',
-        autore: 'E'
+        autore: 'E',
+        img: './img/apilogo.jpg'
       }]
     };
+  },
+  // SOSTITUIRE ARRAY WORKS CON CHIAMATA AXIOS
+  mounted: function mounted() {
+    // utile per chiamate AJAX, prima che carichi la pagina prendi i dati
+    // this.message = "popolato dentro MOUNTED";
+    // alert('ciao');
+    var self = this; // = al THEN
+
+    axios.get('/api/message').then(function (response) {
+      // console.log(response.data);
+      var messagesArray = response.data;
+      console.log(messagesArray); // console.log(messagesFromController);
+      // self.message = messagesArray; // do a messagge il valore del RESPONSE
+      // console.log(self.message);
+    }); // primo paramentro, cosa devo chiamate, secondo parametro funzione di CALLBACK
   }
 });
 
@@ -6555,7 +6577,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".lavori-card {\n  background: white;\n  width: calc(100% / 6);\n  padding: 20px;\n  border-radius: 10px;\n  height: 200px;\n  margin: 10px;\n  flex-wrap: wrap;\n}", ""]);
+exports.push([module.i, ".lavori-card {\n  background: white;\n  width: calc(100% / 6);\n  padding: 20px;\n  border-radius: 10px;\n  height: 200px;\n  margin: 10px;\n  flex-wrap: wrap;\n}\n.lavori-card img {\n  width: 100%;\n}", ""]);
 
 // exports
 
@@ -38499,8 +38521,13 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "lavori-card" }, [
     _vm._v(
-      "\n  " + _vm._s(this.data.title) + " - " + _vm._s(this.data.autore) + "\n"
-    )
+      "\n  " +
+        _vm._s(this.data.title) +
+        " - " +
+        _vm._s(this.data.autore) +
+        "\n  "
+    ),
+    _c("img", { attrs: { src: _vm.data.img, alt: "" } })
   ])
 }
 var staticRenderFns = []
@@ -53962,15 +53989,14 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*!************************************************!*\
   !*** ./resources/js/components/LavoriCard.vue ***!
   \************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _LavoriCard_vue_vue_type_template_id_27f2a700___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LavoriCard.vue?vue&type=template&id=27f2a700& */ "./resources/js/components/LavoriCard.vue?vue&type=template&id=27f2a700&");
 /* harmony import */ var _LavoriCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LavoriCard.vue?vue&type=script&lang=js& */ "./resources/js/components/LavoriCard.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _LavoriCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _LavoriCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _LavoriCard_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LavoriCard.vue?vue&type=style&index=0&lang=scss& */ "./resources/js/components/LavoriCard.vue?vue&type=style&index=0&lang=scss&");
+/* empty/unused harmony star reexport *//* harmony import */ var _LavoriCard_vue_vue_type_style_index_0_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./LavoriCard.vue?vue&type=style&index=0&lang=scss& */ "./resources/js/components/LavoriCard.vue?vue&type=style&index=0&lang=scss&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -54002,7 +54028,7 @@ component.options.__file = "resources/js/components/LavoriCard.vue"
 /*!*************************************************************************!*\
   !*** ./resources/js/components/LavoriCard.vue?vue&type=script&lang=js& ***!
   \*************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
