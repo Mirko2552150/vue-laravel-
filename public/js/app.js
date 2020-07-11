@@ -1979,7 +1979,7 @@ __webpack_require__.r(__webpack_exports__);
       }]
     };
   },
-  // CHIAMATA AXIOS
+  // CHIAMATA AXIOSs
   mounted: function mounted() {
     // utile per chiamate AJAX, prima che carichi la pagina prendi i dati
     // this.message = "popolato dentro MOUNTED";

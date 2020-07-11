@@ -50,7 +50,7 @@
       };
     },
 
-    // CHIAMATA AXIOS
+    // CHIAMATA AXIOSs
 
     mounted() { // utile per chiamate AJAX, prima che carichi la pagina prendi i dati
       // this.message = "popolato dentro MOUNTED";
