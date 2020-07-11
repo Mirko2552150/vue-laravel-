@@ -50,7 +50,7 @@
       };
     },
 
-    // SOSTITUIRE ARRAY WORKS CON CHIAMATA AXIOS
+    // CHIAMATA AXIOS
 
     mounted() { // utile per chiamate AJAX, prima che carichi la pagina prendi i dati
       // this.message = "popolato dentro MOUNTED";
@@ -69,7 +69,7 @@
     }
   };
 
-  
+
 </script>
 
 <style lang="scss">

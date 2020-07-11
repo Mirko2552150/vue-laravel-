@@ -1979,7 +1979,7 @@ __webpack_require__.r(__webpack_exports__);
       }]
     };
   },
-  // SOSTITUIRE ARRAY WORKS CON CHIAMATA AXIOS
+  // CHIAMATA AXIOS
   mounted: function mounted() {
     // utile per chiamate AJAX, prima che carichi la pagina prendi i dati
     // this.message = "popolato dentro MOUNTED";
