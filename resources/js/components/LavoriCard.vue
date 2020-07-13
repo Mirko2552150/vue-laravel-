@@ -1,17 +1,21 @@
 <template>
   <div class="lavori-card">
-    {{ this.data.title }} - {{ this.data.autore }}
+    {{ data.title }} - {{ data.autore }}
     <img :src="data.img" alt="">
   </div>
 </template>
 
 <script>
+
 export default {
     props: ['data'], // se mi arrivano da un altro componente NON sono DATA ma PROPS
   mounted() {
     // console.log(this.data);
+    // console.log(data);
   }
 };
+
+
 
 </script>
 

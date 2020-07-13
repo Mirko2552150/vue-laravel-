@@ -26,15 +26,11 @@
         items: [
           {
             title: 'Home',
-            href: 'home'
+            href: '/'
           },
           {
-            title: 'About Us',
-            href: 'about-us'
-          },
-          {
-            title: 'Prova',
-            href: 'prova'
+            title: 'Lavori',
+            href: '/lavori'
           }
         ]
       };

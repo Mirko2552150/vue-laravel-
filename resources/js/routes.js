@@ -4,7 +4,7 @@ import VueRouter from "vue-router";
 
 import Home from "./pages/Home"; // importiamo la home
 
-import Test from "./pages/Test"; // importo la pagina TEST
+import Lavori from "./pages/Lavori"; // importo la pagina LAVORI
 
 Vue.use(VueRouter);
 
@@ -17,9 +17,9 @@ const router = new VueRouter({
             component: Home // uguale al name
         },
         {
-            path: "/test",
-            name: "test",
-            component: Test
+            path: "/lavori",
+            name: "lavori",
+            component: Lavori
         }
     ]
 });
