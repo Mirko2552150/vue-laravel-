@@ -1,6 +1,6 @@
 <template>
   <div class="lavori-card">
-    {{ data.title }} - {{ data.autore }}
+    <a :href="data.link">{{ data.title }}</a>{{ data.autore }}
     <img :src="data.img" alt="">
   </div>
 </template>
@@ -22,12 +22,16 @@ export default {
 <style lang="scss">
   .lavori-card {
     background: white;
-    width: calc(100% / 6);
+    width: calc(100% / 4);
     padding: 20px;
     border-radius: 10px;
-    height: 200px;
+    height: 300px;
     margin: 10px;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     img {
       width: 100%;
     }

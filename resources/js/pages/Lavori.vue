@@ -33,8 +33,6 @@ export default {
 <!-- con leng indichiamo il metodo di inserimento HTML SCSS ecc -->
 <style scoped leng="scss">
   .lavori {
-    width: 100vw;
-    height: 100vh;
-    background-color: darkblue;
+    background-color: black;
   }
 </style>

@@ -40,16 +40,19 @@
 
 <style lang="scss" scoped>
   .lavori-header {
-    background-color: green;
+    background-color: white;
     height: 70px;
     line-height: 70px;
+    font-size: 20px;
     ul {
       list-style: none;
+      text-align: right;
       li {
         display: inline-block;
         margin-right: 10px;
+
         a {
-          color: white;
+          color: black;
         }
       }
     }
