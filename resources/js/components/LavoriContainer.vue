@@ -62,7 +62,6 @@
       axios.get('/api/message')
       .then(function(response) {
         // console.log(response.data);
-        self.messages = response.data; // popola l'ARREY nel data    COME???
         // console.log(self.messages);
         // self.message = messages; // do a messagge il valore del RESPONSE
         // console.log(self.message);

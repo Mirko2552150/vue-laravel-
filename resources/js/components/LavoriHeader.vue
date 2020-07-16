@@ -50,13 +50,11 @@
       li {
         display: inline-block;
         margin-right: 10px;
-
         a {
           color: black;
         }
       }
     }
-
   }
   img {
     height: 70px;
